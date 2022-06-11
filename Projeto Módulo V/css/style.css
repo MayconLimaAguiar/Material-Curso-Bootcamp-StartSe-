@@ -5,17 +5,17 @@
     margin: 0;
     padding: 0;
     outline: 0;
+    /*background-color: black;*/
 }
 
 html, body {
-    height: 100vh;
     font-family: 'Ubuntu', sans-serif;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
 }    
 
 header {
-    background-color: #0080ed;
+    background-color: black;
 }
 
 header .container {
@@ -45,7 +45,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background: rgba(233, 232, 232, 0.404);
+ color: #0080ed;
 }
 
 header .container img {
@@ -101,15 +101,27 @@ form input {
 form [type="submit"] {
     background-color: #0080ed;
     color: white;
+    width: 150px;
+    padding-left: 0px;
+    font-size: 16px;
+    height: 40px;
 }
 form [type="submit"]:hover {
     cursor: pointer;
+    background-color: rgba(0, 128, 237, 0.75);
+    transform: translateY(-2px);
 }
 
 main .container-main img {
     width: 600px;
 }
+
+
 /* cards */ 
+
+a {
+    text-decoration: none;
+}
 
 .cards {
     width: 90%;
@@ -133,6 +145,7 @@ main .container-main img {
     cursor: pointer;
     box-shadow: 5px 5px 15px -4px black;
     transition: all 0.3s ease 0s;
+    border-radius: 10px;
 }
 
 .card:hover {
@@ -144,6 +157,8 @@ main .container-main img {
     padding-top: 56.25%;
     overflow: hidden;
     position: relative;
+    border-radius: 10px 10px 0 0;
+    height: 225px;
 }
 
 .image img {
