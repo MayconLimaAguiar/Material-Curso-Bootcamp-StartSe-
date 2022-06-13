@@ -1,21 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap');
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     outline: 0;
-    /*background-color: black;*/
 }
 
-html, body {
-    font-family: 'Ubuntu', sans-serif;
+html,
+body {
+    font-family: "Source Sans Pro", 'Times New Roman';
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-}    
+}
+
+/* HEADER */
 
 header {
-    background-color: black;
+    background-color: #0080ed;
 }
 
 header .container {
@@ -45,7 +47,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
- color: #0080ed;
+    background: rgba(255, 255, 255, 0.15);
 }
 
 header .container img {
@@ -53,11 +55,10 @@ header .container img {
 }
 
 #checkbox-menu {
-    display: none;
+    display: none
 }
 
-/* Main */ 
-
+/* MAIN */
 main {
     margin-bottom: 100px;
 }
@@ -71,14 +72,14 @@ main .container-main {
 }
 
 h2 {
-    color: black;
+    color: rgb(0, 0, 0);
     font-size: 45px;
     line-height: 50px;
     font-weight: bold;
 }
 
 h3 {
-    color: rgb(133, 131, 131);
+    color: rgb(131, 131, 131);
     font-size: 20px;
     line-height: 28px;
     margin: 10px 0;
@@ -106,6 +107,7 @@ form [type="submit"] {
     font-size: 16px;
     height: 40px;
 }
+
 form [type="submit"]:hover {
     cursor: pointer;
     background-color: rgba(0, 128, 237, 0.75);
@@ -116,8 +118,7 @@ main .container-main img {
     width: 600px;
 }
 
-
-/* cards */ 
+/* CARDS */
 
 a {
     text-decoration: none;
@@ -132,18 +133,18 @@ a {
     grid-gap: 20px;
 }
 
-.text--medium{
+.text--medium {
     font-size: 16px;
     line-height: 26px;
     font-weight: 400;
-    color: rgb(161, 161, 161);
+    color: rgb(187, 185, 185);
 }
 
 .card {
     display: flex;
     flex-direction: column;
     cursor: pointer;
-    box-shadow: 5px 5px 15px -4px black;
+    box-shadow: 5px 5px 15px -4px #000000;
     transition: all 0.3s ease 0s;
     border-radius: 10px;
 }
@@ -177,13 +178,62 @@ a {
     margin-bottom: 0px;
 }
 
-.desafio {
+/* DESAFIO */
+
+.container-desafio h3 {
+    color: rgb(49, 49, 49);
+    font-size: 25px;
+    line-height: 28px;
+    margin: 10px 0;
+    padding: 50px;
+
+
+}
+
+.container-desafio {
     font-size: 100px;
-    display: flex;
-    justify-content: center;
-    height: 400px;
     align-items: center;
-    border: 1px solid black;
-    margin: 100px auto;
+    display: flex;
+    align-content: center;
+    height: 200px;
+    border: transparent;
+    margin: 0px auto;
     max-width: 980px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.desafio-contato input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: auto;
+
+}
+
+.desafio-contato input[type=submit] {
+    width: 100%;
+    background-color: #0080ed;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.desafio-contato input[type=submit]:hover {
+    background-color: #007eed70;
+}
+
+.desafio-contato {
+    float: right;
+    display:flexbox;
+    align-items:flex-end;
+    justify-content: space-between;
+    max-width: 980px;
+    margin: 50px 20px 0px auto;
+    width: 70%;
 }

@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,700;1,400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+html,
+body {
+    font-family: 'Ubuntu', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container-desafio {   
+    font-size: 100px;
+    display:flex;
+    align-content: space-between;
+    height: 400px;
+    border: 1px solid black;
+    margin: 100px auto; 
+    max-width: 980px; 
+    position: relative;
+    padding: 0;
+}
+
+.endereco {
+    flex-flow: column wrap;
+    align-content: flex-start;
+    width: 90%;
+    max-width: 980px;
+    margin: auto;
+    display: flex;
+    padding: 5px;
+}
+.container-desafio input[type=text],textarea {
+    margin-top: 0px;
+    width: 75%;
+    max-width: 980px;
+    margin: top;
+    display:flex;
+    padding: 5px;
+    float: right;
+    position: relative;
+}
+
+.container-desafio input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    position: relative;
+}
+.container-desafio input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.adj {
+    display: flex;
+    flex-flow: column wrap;
+    align-content:flex-end;
+    width: 90%;
+    max-width: 980px;
+    margin: 0px;
+    padding: 5px;
+    position: relative;
+
+}
+
+.bloco {
+    display: flex;
+    flex-flow: column wrap;
+    align-content:flex-end;
+    width: 90%;
+    max-width: 980px;
+    margin: 0px;
+    padding: 5px;
+    position: relative;
+
+}
+
+
+.adj:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+
+    .bloco .adj
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}

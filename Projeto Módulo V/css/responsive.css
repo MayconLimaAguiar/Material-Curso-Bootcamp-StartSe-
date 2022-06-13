@@ -1,8 +1,8 @@
 @media (max-width: 1000px) {
     main .container-main div {
         margin: auto;
-    }
 
+    }
     main .container-main img {
         display: none;
     }
@@ -27,6 +27,7 @@
     input {
         margin: 12px;
     }
+
 }
 
 @media (max-width: 1000px) {
@@ -37,9 +38,12 @@
 
 @media (max-width: 630px) {
 
-    .menu-button-container {
-        display: flex;
-    }
+
+
+
+
+
+
 
     .menu {
         position: absolute;
@@ -56,7 +60,7 @@
     .menu>li {
         display: flex;
         justify-content: center;
-        margin: 0px;
+        margin: 0;
         padding: 0px;
         width: 100%;
         color: white;
@@ -80,7 +84,7 @@
     label {
         cursor: pointer;
         position: relative;
-        display: relative;
+        display: block;
         height: 22px;
         width: 30px;
     }
@@ -109,7 +113,7 @@
 
     #checkbox-menu:checked+label span:nth-child(1) {
         transform: rotate(-45deg);
-        top: 8px;
+        top: 8px
     }
 
     #checkbox-menu:checked+label span:nth-child(2) {
@@ -118,16 +122,35 @@
 
     #checkbox-menu:checked+label span:nth-child(3) {
         transform: rotate(45deg);
-        top: 8px;
+        top: 8px
     }
 
-    nav.menu {
+    nav.menu{
         width: 100%;
     }
 
     #checkbox-menu:checked~nav .menu {
         transform: translateX(-100vw);
         transition: 0.5s ease transform;
+    } 
 
+
+
+
+}
+
+@media (max-width: 1000px) {
+    .container-desafio {
+        margin: auto;
+
+    }
+}
+
+@media (max-width: 630px) {
+    .container-desafio {
+        display: flex;
+    }
+    h3{
+        margin-left: 50px;
     }
 }
